@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: niranjanreddy1231/mongospring:latest
+        image: niranjanreddy1231/mongospring:69386.256
         ports:
         - containerPort: 8080
         env:
@@ -87,7 +87,7 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
-  type: LoadBalancer
+  type: NodePort
 ---
 # Mongo db pod with volumes(HostPath)
 apiVersion: apps/v1
@@ -110,7 +110,7 @@ spec:
            claimName: pvc-hostpath
        containers:
        - name: mongodbcontainer
-         image: mongo:7.0
+         image: mongo:51468.365464
          ports:
          - containerPort: 27017
          env:
