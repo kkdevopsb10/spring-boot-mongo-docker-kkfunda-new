@@ -87,7 +87,7 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
-  type: LoadBalanacer
+  type: LoadBalancer
 ---
 # Mongo db pod with volumes(HostPath)
 apiVersion: apps/v1
